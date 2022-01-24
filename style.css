@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#one{
+	text-align: left;
+}
+body{
+	font-family: Jumpstart Kindergarten Vietnam;
+	margin: 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+.logo{
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 22px;
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	text-decoration: none;
+	letter-spacing: 3px;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	background-color: #262626;
+	font-family: 'mostin';
+}
+
+nav a{
+	text-decoration: none;
+	font-family: mostin;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+.burger{
+	display: none;
+	cursor: pointer;
+}
+
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: rgb(226, 226, 226);
+	margin: 5px;
+}
+
+@media screen and (max-width: 768px){
+	body{
+		overflow-x: hidden;
+	}
+	
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 20vh;
+		top: 10vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		background-color: #000;
+		transform: translate(100%);
+		transition: transform 0.5s ease-in;
+		
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	
+	.burger{
+		display: block;
+	}
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+	
+.banner-area{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: -webkit-flex;
+	dispaly: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	text-align: center;
+	color: #fff;
+}
+
+h1{
+	font-size: 50px;
+	font-weight: 600;
+	margin: 0;
+	text-shadow: 2px 2px #000;
+}
+
+h2{
+	font-size: 70px;
+	font-weight: 600;
+	margin: 0;
+	text-shadow: 2px 2px #000;
+	color: #606060;
+}
+
+img {
+  border-radius: 50%;
+  height: auto;
+  min-width: 400px;
+  max-width: 20%;
+  box-shadow: 10px 10px 20px #ccc;
+  float: left;
+}
+
+@import url('http://fonts.cdnfonts.com/css/mostin');
+@import url('http://fonts.cdnfonts.com/css/jumpstart-kindergarten-vietnam');
